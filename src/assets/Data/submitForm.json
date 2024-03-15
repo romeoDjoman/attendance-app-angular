@@ -1,22 +1,6 @@
-[
-  {
-    "id_pod_name": 1,
-    "pod_name": "Jiseon"
-  },
-  {
-    "id_pod_name": 2,
-    "pod_name": "Seonbin"
-  },
-  {
-    "id_pod_name": 3,
-    "pod_name": "Seonwha"
-  },
-  {
-    "id_pod_name": 4,
-    "pod_name": "Yeeun"
-  },
-  {
-    "id_pod_name": 5,
-    "pod_name": "Yoongi"
-  }
-]
+{
+  "id": 1,
+  "pod_name": "NomDuPOD",
+  "class_name": "NomDeLaClasse",
+  "password": "MotDePasseSecret"
+}

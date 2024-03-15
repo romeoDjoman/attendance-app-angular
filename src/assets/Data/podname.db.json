@@ -1,22 +1,22 @@
 [
   {
-    "id_class": 1,
-    "class_name": "152C"
+    "id_pod_name": 1,
+    "pod_name": "Jiseon"
   },
   {
-    "id_class": 2,
-    "class_name": "154-4C"
+    "id_pod_name": 2,
+    "pod_name": "Seonbin"
   },
   {
-    "id_class": 3,
-    "class_name": "150M"
+    "id_pod_name": 3,
+    "pod_name": "Seonwha"
   },
   {
-    "id_class": 4,
-    "class_name": "154-13A"
+    "id_pod_name": 4,
+    "pod_name": "Yeeun"
   },
   {
-    "id_class": 5,
-    "class_name": "152C"
+    "id_pod_name": 5,
+    "pod_name": "Yoongi"
   }
 ]

@@ -1,0 +1,19 @@
+.mat-css {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.mat-css-full-width {
+  width: 100%;
+}
+
+.custom-card {
+  width: 300px;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+

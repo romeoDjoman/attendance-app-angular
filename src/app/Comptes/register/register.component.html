@@ -1,0 +1,75 @@
+<div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+  <div class="card custom-card px-5 py-3">
+    <form [formGroup]="registerForm" class="custom-input" (ngSubmit)="onSubmitRegistrationForm()">
+      <!-- Your existing form fields... -->
+
+      <mat-form-field class="custom-input-full-width">
+        <mat-label>POD name</mat-label>
+        <input type="text"
+               placeholder="Your name"
+               aria-label="POD name"
+               matInput
+               formControlName="podnameControl"
+               [matAutocomplete]="autoPodname">
+        <mat-autocomplete #autoPodname="matAutocomplete">
+          <mat-option *ngFor="let podname of filteredPodnames | async" [value]="podname.pod_name">
+            {{ podname.pod_name }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+
+      <mat-form-field class="custom-input-full-width">
+        <mat-label>Class ID</mat-label>
+        <input type="text"
+               placeholder="Name of your class"
+               aria-label="Class ID"
+               matInput
+               formControlName="classnameControl"
+               [matAutocomplete]="autoClassname">
+        <mat-autocomplete #autoClassname="matAutocomplete">
+          <mat-option *ngFor="let classname of filteredClassnames | async" [value]="classname.class_name">
+            {{ classname.class_name }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+
+      <mat-form-field class="custom-input-full-width">
+        <mat-label>POD Position</mat-label>
+        <input type="text"
+               placeholder="Your position"
+               aria-label="Pod Position"
+               matInput
+               formControlName="podPositionControl"
+               [matAutocomplete]="autoPodPosition">
+        <mat-autocomplete #autoPodPosition="matAutocomplete">
+          <mat-option *ngFor="let podfunctionname of filteredPodFunctionnames | async" [value]="podfunctionname.pod_function_name">
+            {{ podfunctionname.pod_function_name }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+
+      <mat-form-field class="custom-input-full-width">
+        <mat-label>Password</mat-label>
+        <input type="password"
+               placeholder="Your password"
+               aria-label="Password"
+               matInput
+               formControlName="passwordControl">
+      </mat-form-field>
+
+      <mat-form-field class="custom-input-full-width">
+        <mat-label>Password Confirmation</mat-label>
+        <input type="password"
+               placeholder="Confirm your password"
+               aria-label="Password Confirmation"
+               matInput
+               formControlName="passwordValidationControl">
+        <mat-error *ngIf="registerForm.hasError('mismatch', 'passwordValidationControl')">
+          Passwords do not match.
+        </mat-error>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">Register</button>
+    </form>
+  </div>
+</div>

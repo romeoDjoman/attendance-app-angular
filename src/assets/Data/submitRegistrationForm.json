@@ -1,0 +1,12 @@
+[
+  {
+    "status": "success",
+    "message": "Registration successful!",
+    "data": {
+      "userId": 123,
+      "username": "john_doe",
+      "email": "john.doe@example.com"
+    }
+  }
+
+]

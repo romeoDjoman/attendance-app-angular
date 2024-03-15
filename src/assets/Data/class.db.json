@@ -1,22 +1,22 @@
 [
   {
     "id_class": 1,
-    "class": "152C"
+    "class_name": "152C"
   },
   {
     "id_class": 2,
-    "class": "154-4C"
+    "class_name": "124-4C"
   },
   {
     "id_class": 3,
-    "class": "150M"
+    "class_name": "150M"
   },
   {
     "id_class": 4,
-    "class": "154-13A"
+    "class_name": "104-13A"
   },
   {
     "id_class": 5,
-    "class": "152C"
+    "class_name": "152C"
   }
 ]
